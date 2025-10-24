@@ -10,13 +10,13 @@
 
         cmben {
             bindings = <&layer_en>;
-            key-positions = <15 16>;
+            key-positions = <40 23>;
             layers = <1>;
         };
 
         cmbru {
             bindings = <&layer_ru>;
-            key-positions = <15 16>;
+            key-positions = <40 23>;
             layers = <0>;
         };
     };
@@ -82,7 +82,7 @@
 
         en {
             bindings = <
-&kp ESC    &kp Q  &kp W  &kp E  &kp R         &kp T                          &kp Y  &kp U      &kp I      &kp O    &kp P     &kp BSLH
+&kp ESC    &kp Q  &kp W  &kp E  &kp R         &kp T                          &kp Y  &kp U      &kp I      &kp O    &kp P     &kp BACKSPACE
 &kp TAB    &kp A  &kp S  &kp D  &kp F         &kp G                          &kp H  &kp J      &kp K      &kp L    &kp SEMI  &kp RIGHT_ALT
 &kp LSHFT  &kp Z  &kp X  &kp C  &kp V         &kp B  &kp LBKT     &kp RBKT   &kp N  &kp M      &kp COMMA  &kp DOT  &kp SQT   &kp RSHFT
                                 &kp LEFT_GUI  &mo 2  &kp SPACE    &kp ENTER  &mo 3  &kp RCTRL
@@ -94,7 +94,7 @@
         ru {
             display-name = "Ru";
             bindings = <
-&kp ESC    &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE                                                   &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA  &kp RU_CYRILLIC_ZE   &kp BSLH
+&kp ESC    &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE                                                   &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA  &kp RU_CYRILLIC_ZE   &kp BACKSPACE
 &kp TAB    &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                                                   &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE     &kp RU_CYRILLIC_ZHE  &kp LEFT_ALT
 &kp LSHFT  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I   &kp RU_CYRILLIC_HA    &kp RU_CYRILLIC_HARD_SIGN  &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU     &kp RU_CYRILLIC_E    &kp RSHFT
                                                                               &kp LEFT_GUI        &mo 2               &kp SPACE             &kp ENTER                  &mo 3               &kp RCTRL
@@ -103,10 +103,10 @@
 
         nav {
             bindings = <
-&trans  &trans  &kp HOME      &kp UP    &kp END        &kp INS                    &kp PG_UP        &kp N7  &kp N8  &kp N9  &trans  &trans
-&trans  &trans  &kp LEFT      &kp DOWN  &kp RIGHT      &kp RET                    &kp PG_DN        &kp N4  &kp N5  &kp N6  &trans  &trans
-&trans  &trans  &kp LC(LEFT)  &kp CAPS  &kp LC(RIGHT)  &kp DEL  &trans    &trans  &kp PRINTSCREEN  &kp N1  &kp N2  &kp N3  &trans  &trans
-                                        &trans         &trans   &trans    &trans  &mo 5            &trans
+&trans  &kp N1  &kp N2  &kp N3     &kp N4     &kp N5                           &kp N6          &kp N7          &kp N8        &kp N9           &kp N0  &kp DELETE
+&trans  &trans  &trans  &trans     &trans     &kp RET                          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
+&trans  &trans  &trans  &kp LG(C)  &kp LG(V)  &trans   &trans    &kp CAPSLOCK  &trans          &trans          &trans        &trans           &trans  &trans
+                                   &trans     &trans   &trans    &trans        &mo 5           &trans
             >;
 
             display-name = "Navigation";
